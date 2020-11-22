@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'file:///C:/Users/14379/AndroidStudioProjects/todoey_flutter_app/lib/widgets/task_tile.dart';
+import 'add_task_screen.dart';
 
 class TasksScreen extends StatelessWidget {
 
@@ -8,7 +9,7 @@ class TasksScreen extends StatelessWidget {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          showModalBottomSheet(context: context, builder: (context)=> Container());
+          showModalBottomSheet(context: context, builder: (context)=> AddTaskScreen());
         },
         backgroundColor: Colors.lightBlueAccent,
         child: Icon(Icons.add),
